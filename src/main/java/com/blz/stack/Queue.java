@@ -2,21 +2,21 @@ package com.blz.stack;
 
 import java.util.LinkedList;
 
-public class Stack {
+public class Queue {
     LinkedList<Integer> list = new LinkedList<>();
 
-    public void push(int value){
-        list.add(value);
+    public void enqueue(int value){
+        list.addLast(value);
     }
-    public Integer pop() {
+    public Integer dequeue() {
         if (list.isEmpty()) {
-            throw new RuntimeException("Stack is empty");
+            throw new RuntimeException("Queue is empty");
         }
         return list.removeFirst();
     }
     public Integer peek() {
         if ( list.isEmpty()) {
-            throw new RuntimeException("Stack is Empty");
+            throw new RuntimeException("Queue is Empty");
         }
         return list.getFirst();
     }

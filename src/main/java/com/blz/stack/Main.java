@@ -2,14 +2,15 @@ package com.blz.stack;
 
 public class Main {
     public static void main(String[] args) {
-        Stack stack = new Stack();
-        stack.push(56);
-        stack.push(30);
-        stack.push(70);
+        Queue queue = new Queue();
+        queue.enqueue(56);
+        queue.enqueue(30);
+        queue.enqueue(70);
 
-        while (!stack.isEmpty()) {
-            System.out.println("peek top element: " + stack.peek());
-            System.out.println("pop top element: " + stack.pop());
+
+        while (!queue.isEmpty()) {
+            System.out.println("peeking at first element: " + queue.peek());
+            System.out.println("dequeing first element: " + queue.dequeue());
         }
 
     }

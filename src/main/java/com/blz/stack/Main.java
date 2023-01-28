@@ -9,7 +9,6 @@ public class Main {
 
 
         while (!queue.isEmpty()) {
-            System.out.println("peeking at first element: " + queue.peek());
             System.out.println("dequeing first element: " + queue.dequeue());
         }
 

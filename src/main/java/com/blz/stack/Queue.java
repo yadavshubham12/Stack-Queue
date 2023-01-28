@@ -14,12 +14,6 @@ public class Queue {
         }
         return list.removeFirst();
     }
-    public Integer peek() {
-        if ( list.isEmpty()) {
-            throw new RuntimeException("Queue is Empty");
-        }
-        return list.getFirst();
-    }
     public boolean isEmpty() {
         return list.isEmpty();
     }
